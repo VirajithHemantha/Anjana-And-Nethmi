@@ -9,7 +9,6 @@ import { CoupleDetails } from './components/CoupleDetails';
 import { CeremonyDetails } from './components/CeremonyDetails';
 import { Location } from './components/Location';
 import { Timeline } from './components/Timeline';
-import { Gallery } from './components/Gallery';
 import { Countdown } from './components/Countdown';
 import { RSVPForm } from './components/RSVPForm';
 import { WishesSection } from './components/WishesSection';
@@ -106,11 +105,6 @@ export default function App() {
         <Timeline />
       </div>
 
-      <DecorativeDivider />
-
-      <div className="py-8 sm:py-12 bg-gradient-to-b from-white/80 via-brand-champagne/90 to-white/80 relative inner-border-gold m-4 sm:m-8 rounded-[2rem]">
-        <Gallery />
-      </div>
 
       <DecorativeDivider />
 

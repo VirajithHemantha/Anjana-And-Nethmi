@@ -84,7 +84,7 @@ export const Hero: React.FC<{ guestName?: string }> = ({ guestName }) => {
           </div>
 
           <span className="text-brand-mocha uppercase tracking-[0.4em] sm:tracking-[0.6em] text-xs sm:text-sm font-medium mb-6 sm:mb-10 block drop-shadow-sm font-sans">
-            The Celebration of Love
+            Homecoming Celebration
           </span>
 
           <div className="relative mb-8 sm:mb-12 w-full flex justify-center">
@@ -116,7 +116,7 @@ export const Hero: React.FC<{ guestName?: string }> = ({ guestName }) => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-gold/40" />
             <p className="text-[1.1rem] sm:text-2xl font-serif italic text-brand-mocha tracking-wide px-4 text-center max-w-xl leading-relaxed drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
-              Together with our families, we joyfully invite you to join us
+              Together with our families, we joyfully invite you to celebrate our homecoming
             </p>
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-l from-transparent to-brand-gold/40" />
           </div>

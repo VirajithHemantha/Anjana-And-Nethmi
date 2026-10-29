@@ -82,8 +82,8 @@ export const RSVPForm: React.FC<{ guestName?: string }> = ({ guestName = '' }) =
                 exit={{ opacity: 0, scale: 0.95 }}
                 className="text-center py-16 px-8 bg-white/70 rounded-[2rem] border border-white shadow-xl"
               >
-                <div className="w-24 h-24 bg-green-50/80 rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner border border-green-100">
-                  <CheckCircle className="w-12 h-12 text-green-500" />
+                <div className="w-24 h-24 bg-brand-champagne rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner border border-brand-gold/30">
+                  <CheckCircle className="w-12 h-12 text-brand-sand" />
                 </div>
                 <h3 className="text-4xl font-display text-brand-mocha mb-4 tracking-tight drop-shadow-sm">With Gratitude</h3>
                 <p className="text-brand-sand/90 leading-relaxed font-serif text-lg mb-8">

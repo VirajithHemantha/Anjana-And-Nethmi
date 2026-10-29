@@ -20,18 +20,18 @@ export const CeremonyDetails: React.FC = () => {
           >
             <div className="inline-flex items-center gap-4 mb-6">
               <span className="text-brand-mocha uppercase tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
-                The Sacred Union
+                Our Homecoming
               </span>
               <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-r from-brand-mocha/60 to-transparent" />
             </div>
             
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-brand-mocha mb-8 leading-[1.1] drop-shadow-sm">
               A Celebration of <br />
-              <span className="italic font-light text-brand-mocha">Tradition & Love</span>
+              <span className="italic font-light text-brand-mocha">Love & Family</span>
             </h2>
             
             <p className="text-brand-sand/90 font-serif text-lg sm:text-xl leading-relaxed mb-8 max-w-lg">
-              We are honored to invite you to witness our union at {WEDDING.venue.name}, {WEDDING.venue.city}, surrounded by the blessings and warmth of our loved ones.
+              We are delighted to invite you to celebrate our homecoming at {WEDDING.venue.name}, {WEDDING.venue.city}, surrounded by the blessings and warmth of our loved ones.
             </p>
 
             {/* Premium Timeline */}
@@ -55,7 +55,7 @@ export const CeremonyDetails: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-serif text-2xl sm:text-3xl text-brand-mocha mb-2 group-hover:text-brand-mocha transition-colors duration-500">{WEDDING.time}</h4>
-                  <p className="text-brand-sand/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Celebration</p>
+                  <p className="text-brand-sand/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Homecoming Celebration</p>
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ export const CeremonyDetails: React.FC = () => {
                   e.currentTarget.src = "https://images.unsplash.com/photo-1519225421980-715cb02151ff?auto=format&fit=crop&q=80&w=800&h=1000"; 
                   e.currentTarget.onerror = null; 
                 }}
-                alt="Ceremony Venue"
+                alt="Homecoming Venue"
                 className="w-full h-full object-cover scale-[1.2] lg:scale-[1.15] object-[center_30%] transition-transform duration-[2s] ease-out group-hover:scale-[1.25] lg:group-hover:scale-[1.2]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5 pointer-events-none mix-blend-overlay opacity-opacity-70 group-hover:opacity-100 transition-opacity duration-1000" />

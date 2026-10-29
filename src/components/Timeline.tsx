@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Heart, Music, Camera, Utensils, PartyPopper } from 'lucide-react';
+import { Heart, Camera, Utensils, PartyPopper } from 'lucide-react';
 
 const events = [
   { time: '09:00 AM', title: 'Guest Arrival', icon: Heart, desc: 'Welcoming our loved ones to Hotel River Park, Hikkaduwa' },
-  { time: '09:30 AM', title: 'Wedding Ceremony', icon: Music, desc: 'Traditional rituals and blessings for the couple' },
-  { time: '12:30 PM', title: 'Wedding Lunch', icon: Utensils, desc: 'A celebratory feast with family and friends' },
+  { time: '12:30 PM', title: 'Homecoming Lunch', icon: Utensils, desc: 'A celebratory feast with family and friends' },
   { time: '02:00 PM', title: 'Celebrations & Photographs', icon: Camera, desc: 'Cake cutting, music and cherished moments' },
   { time: '04:00 PM', title: 'Farewell', icon: PartyPopper, desc: 'Sending the couple off on their new journey' },
 ];
@@ -17,7 +16,7 @@ export const Timeline: React.FC = () => {
         <span className="text-brand-mocha uppercase tracking-[0.4em] text-[10px] font-medium mb-4 block">
           The Day's Flow
         </span>
-        <h2 className="text-5xl font-display text-brand-mocha tracking-tight">Wedding Timeline</h2>
+        <h2 className="text-5xl font-display text-brand-mocha tracking-tight">Homecoming Timeline</h2>
         <div className="w-12 h-px bg-brand-gold/30 mx-auto mt-6" />
       </div>
 

@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Emerald & Gold Color Palette */
+  /* Royal Red & Gold Color Palette */
   --color-brand-beige: #c5a059; /* Kept old names for compatibility, mapped to gold */
-  --color-brand-beige-deep: #0b3323; /* Mapped to Emerald */
-  --color-brand-champagne: #fcf8ee;
+  --color-brand-beige-deep: #7a0f1c; /* Mapped to Royal Red */
+  --color-brand-champagne: #fdf5f0;
   --color-brand-ivory: #ffffff;
   --color-brand-gold: #c5a059;
   --color-brand-gold-light: #e5cd97;
-  --color-brand-mocha: #061e14; /* Deep emerald */
-  --color-brand-sand: #164f38; /* Light emerald */
+  --color-brand-mocha: #5c0a14; /* Deep maroon */
+  --color-brand-sand: #8e1b26; /* Royal red */
 
   --font-serif: "Cormorant Garamond", serif;
   --font-display: "Cinzel", serif;

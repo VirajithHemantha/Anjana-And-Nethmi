@@ -20,7 +20,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
   };
 
   return (
-    <div className="fixed inset-0 bg-[#061e14] z-[100] flex items-center justify-center overflow-hidden">
+    <div className="fixed inset-0 bg-[#3d060d] z-[100] flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
         src="/images/greenopening.mp4"
