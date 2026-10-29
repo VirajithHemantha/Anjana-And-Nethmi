@@ -2,8 +2,9 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Sparkles, Heart } from 'lucide-react';
 import { FloatingPetals } from './FloatingPetals';
+import { WEDDING, COUPLE_NAMES } from '../config/wedding';
 
-export const Hero: React.FC = () => {
+export const Hero: React.FC<{ guestName?: string }> = ({ guestName }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 1000], [0, 400]);
@@ -20,7 +21,7 @@ export const Hero: React.FC = () => {
       >
         <img
           src="/images/a.jpg"
-          alt="Samadhi and Madhawa"
+          alt={COUPLE_NAMES}
           className="w-full h-full object-cover opacity-90"
           style={{ objectPosition: 'center 20%' }}
         />
@@ -91,12 +92,26 @@ export const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[140%] bg-white/40 blur-[50px] sm:blur-[80px] rounded-full pointer-events-none" />
 
             <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-brand-mocha leading-[1.1] sm:leading-[0.9] drop-shadow-sm">
-              Eleanor <br className="sm:hidden" />
+              {WEDDING.groom.name} <br className="sm:hidden" />
               <span className="text-brand-gold italic font-light mx-2 sm:mx-6 text-5xl sm:text-[6rem] lg:text-[8rem] inline-block -translate-y-2 sm:-translate-y-6">&</span>
               <br className="sm:hidden" />
-              Alexander
+              {WEDDING.bride.name}
             </h1>
           </div>
+
+          {guestName && (
+            <div className="mb-6 sm:mb-8 px-4 flex flex-col items-center">
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.4em] text-brand-sand font-semibold font-sans mb-3">
+                We cordially invite
+              </span>
+              <p className="font-display text-3xl sm:text-5xl text-brand-mocha drop-shadow-sm leading-tight">
+                {guestName}
+              </p>
+              <span className="mt-3 text-base sm:text-lg font-serif italic text-brand-mocha/80">
+                to celebrate our special day with us
+              </span>
+            </div>
+          )}
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-gold/40" />
@@ -113,7 +128,7 @@ export const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-transparent pointer-events-none" />
               <span className="relative text-[16px] sm:text-3xl font-serif text-brand-mocha tracking-[0.2em] sm:tracking-[0.4em] font-medium drop-shadow-sm flex items-center gap-2 sm:gap-3 whitespace-nowrap">
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-gold flex-shrink-0" />
-                22 . 03 . 2027
+                {WEDDING.dateShort}
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-gold flex-shrink-0" />
               </span>
             </div>
@@ -126,7 +141,7 @@ export const Hero: React.FC = () => {
       <div className="absolute left-8 sm:left-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-6 mix-blend-multiply opacity-70">
         <div className="w-[1px] h-24 bg-gradient-to-b from-transparent to-brand-gold/50" />
         <p className="writing-mode-vertical text-[11px] uppercase tracking-[0.6em] text-brand-mocha font-semibold font-sans">
-          ITC Rathnadeepa • Colombo
+          {WEDDING.venue.name} • {WEDDING.venue.city}
         </p>
         <div className="w-[1px] h-24 bg-gradient-to-t from-transparent to-brand-gold/50" />
       </div>
@@ -134,7 +149,7 @@ export const Hero: React.FC = () => {
       <div className="absolute right-8 sm:right-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-6 mix-blend-multiply opacity-70">
         <div className="w-[1px] h-24 bg-gradient-to-b from-transparent to-brand-gold/50" />
         <p className="writing-mode-vertical text-[11px] uppercase tracking-[0.6em] text-brand-mocha font-semibold font-sans rotate-180">
-          Save the Date • March 2027
+          Save the Date • December 2026
         </p>
         <div className="w-[1px] h-24 bg-gradient-to-t from-transparent to-brand-gold/50" />
       </div>

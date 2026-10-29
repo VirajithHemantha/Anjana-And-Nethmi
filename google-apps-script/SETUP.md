@@ -1,17 +1,25 @@
-1. Open your Google Sheet and create two tabs named RSVP and WISH.
+1. Open the spreadsheet:
+   https://docs.google.com/spreadsheets/d/1gPuURhgf2P7a12m772raIUOzKKeB0ItdK8mib4yosXw/edit
 2. Open Extensions > Apps Script.
-3. Replace script content with code from google-apps-script/code.gs.
-4. Click Deploy > New deployment.
-5. Select type: Web app.
-6. Execute as: Me.
-7. Who has access: Anyone.
-8. Deploy and copy the Web App URL.
-9. In your project root, create a file named .env with:
+3. Replace the script content with google-apps-script/code.gs.
+4. Select the `setup` function in the toolbar and click Run. Approve the permissions.
+   This creates the "RSVP" and "Wishes" sheets with headers (they are also created
+   automatically on the first submission).
+5. Click Deploy > New deployment > type: Web app.
+   - Execute as: Me
+   - Who has access: Anyone
+6. Deploy and copy the Web App URL (ends in /exec).
+7. In the project root, create a file named .env with:
 
 VITE_GOOGLE_APPS_SCRIPT_URL=YOUR_WEB_APP_URL
 
-10. Restart Vite dev server.
+8. Restart the Vite dev server (and set the same variable on your hosting provider).
+
+Sheets and columns:
+- RSVP:   Timestamp | Name | Phone | Attendance | Guests | Message | Invited As
+- Wishes: Timestamp | Name | Message
 
 Notes:
-- If you update Apps Script code later, redeploy a new version.
-- The frontend sends RSVP to sheet RSVP and wishes to sheet WISH.
+- After editing code.gs, use Deploy > Manage deployments > Edit > New version,
+  otherwise the old code keeps running.
+- The guestbook reads wishes with GET ?sheet=WISHES.
