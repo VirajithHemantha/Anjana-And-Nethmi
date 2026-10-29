@@ -27,4 +27,5 @@ export const WEDDING = {
 
 export const COUPLE_NAMES = `${WEDDING.groom.name} & ${WEDDING.bride.name}`;
 
-export const APPS_SCRIPT_URL = import.meta.env.VITE_GOOGLE_APPS_SCRIPT_URL as string | undefined;
+export const APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbxR3mTFHlV8dx7schbwUIrX6iagrNBJsKEUi7ZZLCj94r5yWvdQcSNDufjPXmMRbkwjzw/exec';
