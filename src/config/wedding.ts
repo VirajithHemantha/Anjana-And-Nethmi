@@ -9,14 +9,14 @@ export const WEDDING = {
   bride: {
     name: 'Nethmi',
     father: 'Mr. Palliyage Susantha Baresthu',
-    mother: 'Mrs. A. A. Sameena',
+    mother: 'Mrs. Sameena Baresthu',
   },
-  date: new Date('2026-12-06T09:00:00+05:30'),
+  date: new Date('2026-12-06T09:30:00+05:30'),
   dateLong: 'Sunday, December 6',
   dateYearWords: 'The Year Two Thousand Twenty Six',
   dateShort: '06 . 12 . 2026',
   dateDisplay: 'December 6, 2026',
-  time: '09:00 AM – 04:00 PM',
+  time: '09:30 AM – 03:30 PM',
   venue: {
     name: 'Hotel River Park',
     city: 'Hikkaduwa',

@@ -3,10 +3,10 @@ import { motion } from 'motion/react';
 import { Heart, Camera, Utensils, PartyPopper } from 'lucide-react';
 
 const events = [
-  { time: '09:00 AM', title: 'Guest Arrival', icon: Heart, desc: 'Welcoming our loved ones to Hotel River Park, Hikkaduwa' },
+  { time: '09:30 AM', title: 'Guest Arrival', icon: Heart, desc: 'Welcoming our loved ones to Hotel River Park, Hikkaduwa' },
   { time: '12:30 PM', title: 'Homecoming Lunch', icon: Utensils, desc: 'A celebratory feast with family and friends' },
   { time: '02:00 PM', title: 'Celebrations & Photographs', icon: Camera, desc: 'Cake cutting, music and cherished moments' },
-  { time: '04:00 PM', title: 'Farewell', icon: PartyPopper, desc: 'Sending the couple off on their new journey' },
+  { time: '03:30 PM', title: 'Farewell', icon: PartyPopper, desc: 'Sending the couple off on their new journey' },
 ];
 
 export const Timeline: React.FC = () => {

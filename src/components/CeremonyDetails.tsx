@@ -89,7 +89,7 @@ export const CeremonyDetails: React.FC = () => {
             {/* Main Creative Image Frame */}
             <div className="relative aspect-[3/4] sm:aspect-[4/5] arch-shape overflow-hidden border-[6px] sm:border-[8px] border-white shadow-[0_20px_50px_rgba(197,160,89,0.2)] bg-white group">
               <img
-                src="/images/c.jpg"
+                src="/z.jpeg"
                 onError={(e) => { 
                   e.currentTarget.src = "https://images.unsplash.com/photo-1519225421980-715cb02151ff?auto=format&fit=crop&q=80&w=800&h=1000"; 
                   e.currentTarget.onerror = null; 
